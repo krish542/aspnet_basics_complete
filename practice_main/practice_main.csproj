@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46BA763B-64D5-432B-B175-3FEF26BBDA79}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>practice_main</RootNamespace>
+    <AssemblyName>practice_main</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homepage_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homepage_Staff.Designer.cs">
+      <DependentUpon>homepage_Staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homepage_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homepage_Student.Designer.cs">
+      <DependentUpon>homepage_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library System.Designer.cs">
+      <DependentUpon>Library System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listbox.Designer.cs">
+      <DependentUpon>listbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdi.Designer.cs">
+      <DependentUpon>mdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="multicmb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="multicmb.Designer.cs">
+      <DependentUpon>multicmb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notepad.Designer.cs">
+      <DependentUpon>notepad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datacon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datacon.Designer.cs">
+      <DependentUpon>datacon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calculator.Designer.cs">
+      <DependentUpon>calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statecity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statecity.Designer.cs">
+      <DependentUpon>statecity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="txt_refresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="txt_refresh.Designer.cs">
+      <DependentUpon>txt_refresh.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homepage_Student.resx">
+      <DependentUpon>homepage_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Library System.resx">
+      <DependentUpon>Library System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listbox.resx">
+      <DependentUpon>listbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdi.resx">
+      <DependentUpon>mdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="multicmb.resx">
+      <DependentUpon>multicmb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notepad.resx">
+      <DependentUpon>notepad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datacon.resx">
+      <DependentUpon>datacon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calculator.resx">
+      <DependentUpon>calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statecity.resx">
+      <DependentUpon>statecity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="txt_refresh.resx">
+      <DependentUpon>txt_refresh.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="practice.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
